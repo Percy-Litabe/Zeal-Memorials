@@ -135,7 +135,8 @@ nav .logo {
     padding: 5px 15px;
     border-radius: 25px;
     background-color: indianred;
-    transition: linear 0.2s;
+    transition: linear 0.2s; 
+    box-shadow: 5px 0 10px 0 rgb(253, 253, 253), 10px 6px 20px 8px rgb(207, 254, 255);;
 }
 
 .cta-btn:hover {
@@ -156,11 +157,12 @@ nav .logo {
     position: relative;
     margin: 0 15px;
     bottom: 20px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 90px 90px;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
 .landing-head h1 {
+    font-size: 20px;
     font-weight: 100;
     text-align: center;
 }
@@ -199,15 +201,17 @@ footer {
 
 .footer-sec {
     margin: 5px;
+    padding-top: 40px;
     color: #000;
 }
 .footer-sec h2 {
-    font-size: 40px;
+    font-size: 2rem;
+    letter-spacing: 3px;
     font-weight: 400;
 }
 
 .footer-sec p {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 100;
     letter-spacing: 5px;
 }
@@ -235,10 +239,10 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 45px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     color: #000;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.664);
 }
 
 .footer-sign a {
@@ -247,7 +251,7 @@ footer {
 }
 
 .footer-sign h3 {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: 4px;
 }
