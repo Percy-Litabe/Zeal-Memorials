@@ -93,6 +93,8 @@ nav ul a {
     font-size: 15px;
     padding: 5px 10px;
     border-radius: 25px;
+    color: #000;
+    text-decoration: none;
     background-color: indianred;
 }
 
@@ -100,6 +102,11 @@ nav .logo {
     font-size: 25px;
     letter-spacing: 4px;
     word-spacing: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
 }
 
 .header-txt {
@@ -126,6 +133,11 @@ nav .logo {
     font-size: 1.2rem;
 }
 
+.cta-container {
+    background-color: #000;
+    width: 100%;
+}
+
 .cta-btn {
     position: absolute;
     left: 50%;
@@ -134,15 +146,12 @@ nav .logo {
     font-size: 19px;
     padding: 5px 15px;
     border-radius: 25px;
-    background-color: indianred;
-    transition: linear 0.2s; 
-    box-shadow: 5px 0 10px 0 rgb(253, 253, 253), 10px 6px 20px 8px rgb(207, 254, 255);;
+    background-color: indianred; 
 }
 
-.cta-btn:hover {
-    padding: 3px 16px;
-    letter-spacing: 5px;
-    background-color: red;
+.cta-btn {
+    text-decoration: none;
+    color: #000;
 }
 /*--End header*/
 
@@ -201,7 +210,7 @@ footer {
 
 .footer-sec {
     margin: 5px;
-    padding-top: 40px;
+    padding-top: 10px;
     color: #000;
 }
 .footer-sec h2 {
@@ -221,6 +230,7 @@ footer {
 }
 
 .footer-list {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
 }
