@@ -88,16 +88,6 @@ nav ul a {
     border-radius: 25px;
 }
 
-.call-btn a {
-    margin-left: 60px;
-    font-size: 15px;
-    padding: 5px 10px;
-    border-radius: 25px;
-    color: #000;
-    text-decoration: none;
-    background-color: indianred;
-}
-
 nav .logo {
     font-size: 25px;
     letter-spacing: 4px;
@@ -107,6 +97,20 @@ nav .logo {
 nav a {
     text-decoration: none;
     color: #000;
+}
+
+.call-btn {
+    background-color: salmon;
+    text-align: center;
+    padding: 15px;
+    justify-content: center;
+    border-radius: 90px;
+}
+
+.call-btn a {
+    position: relative;
+    bottom: 10px;
+    font-size: 1.1rem;
 }
 
 .header-txt {
@@ -130,7 +134,9 @@ nav a {
 }
 
 .header-txt h5 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 100;
 }
 
 .cta-container {
@@ -143,10 +149,12 @@ nav a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 19px;
+    font-size: 12px;
     padding: 5px 15px;
     border-radius: 25px;
-    background-color: indianred; 
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cta-btn {
