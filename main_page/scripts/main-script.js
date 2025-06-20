@@ -14,7 +14,6 @@ function hideMenu() {
 }
 
 /*Navbar scroll change*/
-
 const navHead = document.querySelector('nav');
 document.addEventListener('scroll', () => {
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/contact.css">
     <script src="https://kit.fontawesome.com/d80fed80d6.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuncqXFbnj7lBMZM5MqpJcsAsGKJcdTkQ&callback=initMap" async defer></script>
     <title>Contact</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <header class="p-header">
             <img src="../assets/images/contact.jpg">            
             <nav>
-                <div class="logo">ZEAL Tech</div>
+            <a href="/index.html"><div class="logo">ZEAL Tech</div></a>
                 <ul class="resp-menu-list">
                     <i onclick= hideMenu() class="fa-duotone fa-solid fa-xmark fa-2x"></i>
                     <a href="/index.html">Home</a><hr>
@@ -21,7 +22,7 @@
                     <a href="../pages/memorials.html">Memorials</a>
                     <a href="../pages/packages.html">Packages</a>
                     <a href="../pages/contact.html">Contact</a>
-                    <a href="/funeral/main_page/pages/contact.html#find-us-sec" class="btn">Get In Touch</a>
+                    <a href="../pages/contact.html" class="btn">Get In Touch</a>
                 </ul>
                 <ul class="menu-list">
                     <a href="#">Home</a>
@@ -30,7 +31,7 @@
                     <a href="/main_page/pages/contact.html">Contact</a>
                 </ul>
                 <div class="call-btn">
-                    <a>Get in touch</a>
+                    <a href="../pages/contact.html">Get in touch</a>
                 </div>
                 <i onclick= showMenu() class="fa-duotone fa-solid fa-bars fa-1x"></i>
             </nav>
@@ -38,12 +39,12 @@
             <div class="header-txt">
                 <h1>Contact Us</h1> 
             </div>
-            <a class="cta-btn">See Our Memorials</a>
+            <a href="../pages/memorials.html" class="cta-btn">See Our Memorials</a>
         </header>
         <!--End header-->
 
         <!--Contact form-->
-        <div class="contact-form">
+        <div class="contact-form" id="contact">
             <section class="form-head">
                 <h1 class="sec-head-txt">Get in Touch with Us</h1>
                 <hr>
@@ -69,9 +70,12 @@
                 <div class="addr-sec">
                     <h2 class="sec-head-txt">You can find us at</h2>
                     <i class="fa-solid fa-location-dot fa-2x"></i>
-                    <p>Karp Crescent <br>
-                       Bloemside Phase 1 <br>
-                       Bloemfontein, 9306
+                    <p>
+                        <a href="https://maps.app.goo.gl/RxSqZSwYPPKfBNon6">
+                            Karp Crescent <br>
+                            Bloemside <br>
+                            Bloemfontein, 9306
+                        </a>
                     </p>
                 </div>
             </section>
@@ -93,12 +97,13 @@
 
         <!--Frequently asked questions-->
         
-        <section class="faq-sec">
+        <section class="faq-sec" id="faq">
             <h1 class="sec-head-txt">Frequently Asked Questions</h1>
             <hr>
             <div class="faq-qna">
                 <h2 class="faq-question">
                     1. What is a funeral website?
+                    <i class="fa-solid fa-circle-chevron-down"></i>
                 </h2>
                 <p class="faq-answer">
                     A funeral website is an online space created to honor and remember a loved one. It can include obituary details, photos, funeral service information, and ways for friends and family to leave tributes.
@@ -108,6 +113,7 @@
             <div class="faq-qna">
                 <h2 class="faq-question">
                     2. How can a funeral website help my family or business?
+                    <i class="fa-solid fa-circle-chevron-down"></i>
                 </h2>
                 <p class="faq-answer">
                     It provides a central place to share information, memories, and updates, making it easier for family, friends, and the community to participate and stay informed.                     
@@ -117,6 +123,7 @@
             <div class="faq-qna">
                 <h2 class="faq-question">
                     3. Do you offer custom designs?
+                    <i class="fa-solid fa-circle-chevron-down"></i>
                 </h2>
                 <p class="faq-answer">     
                     Yes, we create personalized funeral websites that reflect the unique life and spirit of your loved one.                   
@@ -126,6 +133,7 @@
             <div class="faq-qna">
                 <h2 class="faq-question">
                     4. How long does it take to create a website?
+                    <i class="fa-solid fa-circle-chevron-down"></i>
                 </h2>
                 <p class="faq-answer">     
                     Typically, a funeral website can be designed and launched within a few days, depending on your specific needs.                   
@@ -135,6 +143,7 @@
             <div class="faq-qna">
                 <h2 class="faq-question">
                     5. Can the website be updated after it's live?
+                    <i class="fa-solid fa-circle-chevron-down"></i>
                 </h2>
                 <p class="faq-answer">      
                     Yes, you can easily update the website with new information, photos, or messages as needed.                  
@@ -144,6 +153,7 @@
             <div class="faq-qna">
                 <h2 class="faq-question">
                     6. Can I add a donation link to the website?
+                    <i class="fa-solid fa-circle-chevron-down"></i>
                 </h2>
                 <p class="faq-answer">     
                     Absolutely. We can integrate donation links for charities or memorial funds directly into the website.                   
@@ -153,6 +163,7 @@
             <div class="faq-qna">
                 <h2 class="faq-question">
                     7. Is the website mobile-friendly?
+                    <i class="fa-solid fa-circle-chevron-down"></i>
                 </h2>
                 <p class="faq-answer">      
                     Yes, all of our funeral websites are fully responsive and designed to work seamlessly on both computers and mobile devices.                  
@@ -162,6 +173,7 @@
             <div class="faq-qna">
                 <h2 class="faq-question">
                     8. Can visitors leave messages or condolences on the site?
+                    <i class="fa-solid fa-circle-chevron-down"></i>
                 </h2>
                 <p class="faq-answer">      
                     Yes, we can include a guestbook or tribute section where visitors can share their thoughts, memories, and condolences.                  
@@ -171,6 +183,7 @@
             <div class="faq-qna">
                 <h2 class="faq-question">
                     9. Do I need any technical skills to manage the website?
+                    <i class="fa-solid fa-circle-chevron-down"></i>
                 </h2>
                 <p class="faq-answer">     
                     No technical skills are required. We provide easy-to-follow instructions for you to manage the website, and we're always available to assist if needed.                   
@@ -180,6 +193,7 @@
             <div class="faq-qna">
                 <h2 class="faq-question">
                     10. Is there a cost for the website?
+                    <i class="fa-solid fa-circle-chevron-down"></i>
                 </h2>
                 <p class="faq-answer">         
                     Yes, there is a fee for our services, but we offer different pricing packages based on your needs and the features you choose.               
@@ -201,27 +215,29 @@
                     <hr>
                     <p>
                         <ul class="footer-list">
-                            <a href="">About Us</a>
-                            <a href="">FAQ</a>
-                            <a href="">Contact</a>
+                            <a href="/main_page/pages/about.html">About Us</a>
+                            <a href="/main_page/pages/contact.html#faq">FAQ</a>
+                            <a href="/main_page/pages/contact.html#contact">Contact</a>
                         </ul>
                     </p>
                 </div>
                 <div class="footer-sec">
                     <h2>Find us</h2>
                     <hr>
-                    <i class="fa-sharp fa-thin fa-location-dot"></i>
+                    <i class="fa-solid fa-location-dot"></i>
                     <p>
-                        Karp Crescent <br>
-                        Bloemside <br>
-                        Bloemfontein, 9306
+                        <a href="https://maps.app.goo.gl/RxSqZSwYPPKfBNon6">
+                            Karp Crescent <br>
+                            Bloemside <br>
+                            Bloemfontein, 9306
+                        </a>
                     </p>
                 </div>
                 <div class="footer-sec">
                     <h2>Follow us</h2>
                     <hr>
-                    <i class="fa-brands fa-whatsapp fa-2x"></i>
-                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <a href="https://wa.me/qr/C55TC3UCTD7XJ1"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                    <a href="https://instagram/boingotlo_bix/"><i class="fa-brands fa-instagram fa-2x"></i></a>
                 </div>
             </div>
             <div class="footer-sign">
@@ -230,6 +246,6 @@
         </footer>
         <!--End footer-->
     </div>
-    <script src="/main_page/scripts/main-script.js"></script>
+    <script src="../scripts/main-script.js"></script>
 </body>
 </html>

@@ -75,12 +75,13 @@ nav ul a {
 }
 .resp-menu-list i {
     text-align: right;
+    color: #000000;
     padding: 15px;
 }
 
 .resp-menu-list a {
     text-decoration: none;
-    color: #ffff;
+    color: rgb(37, 37, 37);
     font-size: 1.5rem;
     padding: 15px;
     text-align: center;
@@ -107,16 +108,21 @@ nav .logo {
     word-spacing: 3px;
 }
 
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
 .header-txt {
     position: absolute;
     left: 50%;
-    top: 52%;
+    top: 64%;
     width: 100%;
     text-align: center;
     padding: 10px 0;
     font-weight: bold;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(to bottom, transparent, rgb(255,255,255,0.5));
+    background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.821));
 }
 
 .header-txt h1 {
@@ -142,23 +148,31 @@ nav .logo {
     height: auto;
     width: 100%;
     padding: 20px 0;
-    background-color: antiquewhite;
+    background-color: rgb(249, 243, 235);
 }
 
 .nav-links a {
     color: #0e1e32;
-    font-size: 1.6rem;
-    padding: 5px 0;
+    font-size: 1.3rem;
+    margin: 15px 18vw;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px 90px;
     display: flex;
     flex-direction: row;
+    background-color: #03030322;
+    text-decoration: none;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(5px);
     letter-spacing: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*--End navigation section--*/
 
 /*--Obituary section--*/
 .obit-sec {
+    padding: 50px 0;
     height: auto;
     background-color: #0e1e32;
 }
@@ -168,16 +182,17 @@ nav .logo {
     top: 40%;
     color: #fffcff;
     text-align: center;
-    padding: 20px 0;
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     font-weight: 100;
     font-style: italic;
     letter-spacing: 5px;
+    text-decoration: underline 0.5px;
+    text-underline-offset: 5px;
 }
 
 .obit-sec h3 {
     color: #fffcff;
-    font-size: 2rem;
+    font-size: 1.3rem;
     text-align: center;
     font-weight: 100;
     letter-spacing: 3px;
@@ -192,38 +207,43 @@ nav .logo {
 .obit-content p {
     color: #fffcff;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 100;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
 }
 
 /*--End obituary section--*/
 
 /*--Order of service section--*/
 .progrm-sec {
-    height: 90vh;
+    height: auto;
+    margin-bottom: 40px;
     object-fit: cover;
     background-image: url(/funeral/main_page/assets/images/obituaryimg.jpg);
 }
 
 .progrm-head h1 {
-    color: #fffcff;
+    color: #050505;
     text-align: center;
     padding-top: 20px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 100;
     font-style: italic;
     letter-spacing: 5px;
 }
 
 .progrm-head h2 {
-    color: #fffcff;
+    color: #050505;
     text-align: center;
-    padding-top: 5px;
-    font-size: 2.5rem;
+    padding: 20px 0;
+    font-size: 2rem;
     font-weight: 100;
     font-style: italic;
     letter-spacing: 5px;
+}
+
+#t1 {
+    padding-bottom: 20px;
 }
 
 .progrm-content {
@@ -234,12 +254,12 @@ nav .logo {
 }
 
 .progrm-content table {
-    color: white;
+    color: rgb(7, 7, 7);
     width: 100%;
 }
 .progrm-content table td {
     justify-content: space-between;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 100;
     letter-spacing: 2px;
     padding: 5px 0;
@@ -249,12 +269,48 @@ hr {
     margin: 2px 50px;
 }
 
+/*--Venues and their locations--*/
+.venue-ch {
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.venue-ch i {
+    font-size: 30px;
+}
+
+.venue-ch h1 {
+    font-style: italic;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.venue-ch a {
+    color: #0e1e32;
+    font-size: 1.2rem;
+    margin: 10px 60px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fcfafc;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*--End venues and their locations--*/
+
 /*--End order of service section--*/
 
 /*--Footer section--*/
 footer {
     position: relative;
-    bottom: 20px;
     height: auto;
     background: url(../assets/images/footer-flowers.jpg);
     background-size: cover;
@@ -276,7 +332,7 @@ footer {
     flex-direction: column;
     text-align: center;
     font-weight: bold;
-    margin: 20px;
+    margin: 0 20px;
     border-radius: 5px;
     background: rgb(255, 255, 255, 0.4);
     box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.7);
@@ -284,15 +340,19 @@ footer {
 
 .footer-sec {
     margin: 5px;
+    padding-top: 10px;
     color: #000;
 }
 .footer-sec h2 {
-    font-size: 40px;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
     font-weight: 400;
 }
 
-.footer-sec p {
-    font-size: 1.8rem;
+.footer-sec p a {
+    color: #000;
+    font-size: 1.1rem;
+    text-decoration: none;
     font-weight: 100;
     letter-spacing: 5px;
 }
@@ -302,17 +362,21 @@ footer {
 }
 
 .footer-list {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .footer-list a {
     color: #000;
-    padding: 5px 0;
-    font-size: 1.5rem;
+    margin: 3.5px 22.5vw;
+    font-size: 1.1rem;
     font-weight: 100;
+    border-radius: 90px;
     letter-spacing: 5px;
     text-decoration: none;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 12px 4px 8px rgb(red, green, blue);
 }
 
 .footer-sign {
@@ -320,10 +384,10 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 45px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     color: #000;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.664);
 }
 
 .footer-sign a {
@@ -332,7 +396,7 @@ footer {
 }
 
 .footer-sign h3 {
-    font-size: 20px;
+    font-size: 0.7rem;
     font-weight: 400;
     letter-spacing: 4px;
 }

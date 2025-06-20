@@ -103,6 +103,11 @@ nav .logo {
     word-spacing: 3px;
 }
 
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
 .header-txt {
     position: absolute;
     left: 50%;
@@ -118,6 +123,7 @@ nav .logo {
 
 .header-txt h1 {
     font-size: 30px;
+    font-weight: 100;
     letter-spacing: 8px;
     text-transform: uppercase;
 }
@@ -127,11 +133,14 @@ nav .logo {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 19px;
+    font-size: 12px;
     padding: 5px 15px;
+    text-decoration: none;
+    color: #000;
     border-radius: 25px;
-    background-color: indianred;
-    transition: linear 0.2s;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cta-btn:hover {
@@ -237,7 +246,6 @@ nav .logo {
 /*--Footer section--*/
 footer {
     position: relative;
-    bottom: 20px;
     height: auto;
     background: url(../assets/images/footer-flowers.jpg);
     background-size: cover;
@@ -259,7 +267,7 @@ footer {
     flex-direction: column;
     text-align: center;
     font-weight: bold;
-    margin: 20px;
+    margin: 0 20px;
     border-radius: 5px;
     background: rgb(255, 255, 255, 0.4);
     box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.7);
@@ -267,15 +275,19 @@ footer {
 
 .footer-sec {
     margin: 5px;
+    padding-top: 10px;
     color: #000;
 }
 .footer-sec h2 {
-    font-size: 40px;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
     font-weight: 400;
 }
 
-.footer-sec p {
-    font-size: 1.8rem;
+.footer-sec p a {
+    color: #000;
+    font-size: 1.1rem;
+    text-decoration: none;
     font-weight: 100;
     letter-spacing: 5px;
 }
@@ -285,17 +297,21 @@ footer {
 }
 
 .footer-list {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .footer-list a {
     color: #000;
-    padding: 5px 0;
-    font-size: 1.5rem;
+    margin: 3.5px 22.5vw;
+    font-size: 1.1rem;
     font-weight: 100;
+    border-radius: 90px;
     letter-spacing: 5px;
     text-decoration: none;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 12px 4px 8px rgb(red, green, blue);
 }
 
 .footer-sign {
@@ -303,10 +319,10 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 45px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     color: #000;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.664);
 }
 
 .footer-sign a {
@@ -315,7 +331,7 @@ footer {
 }
 
 .footer-sign h3 {
-    font-size: 20px;
+    font-size: 0.7rem;
     font-weight: 400;
     letter-spacing: 4px;
 }
