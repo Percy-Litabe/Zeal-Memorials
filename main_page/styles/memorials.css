@@ -304,9 +304,28 @@ hr {
     letter-spacing: 3px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/*--End venues and their locations--*/
 
+
+/*--End venues and their locations--*/
+/*--Message of thanks at the end on the funeral program--*/
+section.mssgOfTh {
+    position: relative;
+    z-index: 10;
+}
+
+.mssgOfTh img {
+    height: 70vh;
+    width: 100%;
+}
+
+section.mssgbkg {
+    position: fixed;
+}
+
+
+/*--End of message--*/
 /*--End order of service section--*/
+
 
 /*--Footer section--*/
 footer {
