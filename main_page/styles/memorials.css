@@ -10,14 +10,14 @@
 header {
     background-color: aqua;
     width: 100%;
-    height: 72vh;
+    height: 80vh;
     background-repeat: no-repeat;
     z-index: 1;
 }
 header img {
     object-fit: cover;
     width: 100%;
-    height: 72vh;
+    height: 80vh;
     z-index: -1;
 }
 
@@ -116,7 +116,7 @@ nav a {
 .header-txt {
     position: absolute;
     left: 50%;
-    top: 64%;
+    top: 72%;
     width: 100%;
     text-align: center;
     padding: 10px 0;
@@ -147,13 +147,13 @@ nav a {
 .nav-sec {
     height: auto;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: rgb(249, 243, 235);
 }
 
 .nav-links a {
     color: #0e1e32;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 15px 18vw;
     padding: 10px;
     text-align: center;
@@ -358,6 +358,7 @@ footer {
 }
 
 .footer-sec i {
+    color: #000;
     padding: 10px;
 }
 
