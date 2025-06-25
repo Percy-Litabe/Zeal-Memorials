@@ -310,18 +310,28 @@ hr {
 /*--Message of thanks at the end on the funeral program--*/
 section.mssgOfTh {
     position: relative;
-    z-index: 10;
 }
 
 .mssgOfTh img {
-    height: 70vh;
+    height: auto;
     width: 100%;
+    opacity: 0.7;
+    z-index: -1;
 }
 
-section.mssgbkg {
-    position: fixed;
+.mssgOfTh p {
+    position: absolute;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 300;
+    width: 80%;
+    letter-spacing: 3px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30vh;
 }
-
 
 /*--End of message--*/
 /*--End order of service section--*/
